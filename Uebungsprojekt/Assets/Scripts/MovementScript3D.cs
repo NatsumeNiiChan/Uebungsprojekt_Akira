@@ -40,7 +40,7 @@ public class MovementScript3D : MonoBehaviour
 
         MyRigidbody.velocity = newVelocity;
 
-        if (newVelocity.magnitude > 0)
+        if (newVelocity.magnitude > 0.5)
         {
             transform.forward = GetCameraForward();
             playerAnimator.SetBool("IsWalking", true);
